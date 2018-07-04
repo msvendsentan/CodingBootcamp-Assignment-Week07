@@ -11,13 +11,44 @@
 
 
 <body>
-    <header>Placeholder</header>
-    <div id="instructions"></div>
-    <div id="name_input"></div>
+    <header><h1>RPS</h1></header>
+    <div id="instructions">Instructions Here</div>
+    <div id="name_container">
+        <h3>First Name:</h2>
+        <form id="name_form">
+            <input type="text" id="name_input" placeholder="John">
+            <input id="name_button" type="submit" value="Start!">
+        </form>
+    </div>
     <div id="splash"></div> <!--Welcomes player, explains what's going on in the game at the moment (turn, etc)-->
-    <div id="player_one_box"></div>
-    <div id="game_state_box"></div>
-    <div id="player_two_box"></div>
+    <div id="grid_container">
+        <div class="grid_boxes" id="player_1_box">
+            <div id="player_1_name"></div>
+            <div id="player_1_options"></div>
+            <div id="player_2_score"></div>
+        </div>
+        <div class="grid_boxes" id="game_state_box"></div>
+        <div class="grid_boxes" id="player_2_box">
+            <div id="player_2_name"></div>
+            <div id="player_2_options"></div>
+            <div id="player_2_score"></div>
+        </div>
+    </div>
+
+    <div id="chat_container">
+        <div id="chat_window"></div>
+        <form id="chat_form">
+            <input type="text" id="chat_input" placeholder="Type your message...">
+            <input id="chat_button" type="submit" value="Send">
+        </form>
+    </div>
+
+    <br><br>
+
+    <div id="qol_buttons">
+        <button id="clear_players">Clear Players</button>
+        <button id="clear_chat">Clear Chat</button>
+    </div>
 
 
 

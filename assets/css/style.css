@@ -1,0 +1,60 @@
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1%;
+    
+}
+
+.grid_boxes {
+    height: 200px;
+    border: solid 1px black;
+}
+
+#player_1_box {
+    grid-column: 1 / 2;
+
+}
+
+#game_state_box {
+    grid-column: 2 / 3;
+
+}
+
+#player_2_box {
+    grid-column: 3 / 4;
+
+}
+
+.selected {
+    font-weight: bold;
+}
+
+#chat_container {
+    width: 90%;    
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#chat_window {
+    height: 300px;
+    overflow: scroll;
+}
+
+.chat_name, .game_name {
+    color: red;
+}
+
+#chat_form {
+    display: flex;
+}
+
+#chat_input {
+    flex: 1;
+}
+
+#chat_window > p {
+    margin: 0;
+    padding: 0;
+}
+
