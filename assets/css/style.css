@@ -1,44 +1,97 @@
+body {
+    margin: 0 5%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background: teal;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    line-height: 100px;
+}
+
+#instructions {
+    background: lightgrey;
+    text-align: center;
+    min-height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-right: 5px;
+}
+
+#name_container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #grid_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1%;
-    
+    margin-bottom: 30px;    
 }
 
 .grid_boxes {
     height: 200px;
     border: solid 1px black;
+    text-align: center;
+    position: relative;
 }
 
 #player_1_box {
     grid-column: 1 / 2;
-
 }
 
 #game_state_box {
     grid-column: 2 / 3;
-
 }
 
 #player_2_box {
     grid-column: 3 / 4;
+}
 
+#player_1_score, #player_2_score {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.options {
+    background: lightgrey;
+    margin: 5px;
+}
+
+.options:hover {
+    background: darkgrey;
 }
 
 .selected {
     font-weight: bold;
+    background: lightgreen;
+    margin: 5px;
 }
 
 #chat_container {
-    width: 90%;    
-    margin-left: auto;
-    margin-right: auto;
     display: none;
 }
 
 #chat_window {
     height: 300px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .chat_name, .game_name {
@@ -58,3 +111,6 @@
     padding: 0;
 }
 
+.disconnect_message {
+    background: grey;
+}

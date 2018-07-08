@@ -11,21 +11,20 @@
 
 
 <body>
-    <header><h1>RPS</h1></header>
-    <div id="instructions">Instructions Here</div>
+    <header><h1>Multiplayer RPS</h1></header>
+    <div id="instructions">Welcome to multiplayer Rock, Paper, Scissors! Rock beats scissors beats paper beats rock!</div>
     <div id="name_container">
-        <h3>First Name:</h2>
+        <h3>First Name:</h3>
         <form id="name_form">
             <input type="text" id="name_input" placeholder="John">
             <input id="name_button" type="submit" value="Start!">
         </form>
     </div>
-    <div id="splash"></div> <!--Welcomes player, explains what's going on in the game at the moment (turn, etc)-->
     <div id="grid_container">
         <div class="grid_boxes" id="player_1_box">
             <div id="player_1_name"></div>
             <div id="player_1_options"></div>
-            <div id="player_2_score"></div>
+            <div id="player_1_score"></div>
         </div>
         <div class="grid_boxes" id="game_state_box"></div>
         <div class="grid_boxes" id="player_2_box">
@@ -41,13 +40,6 @@
             <input type="text" id="chat_input" placeholder="Type your message...">
             <input id="chat_button" type="submit" value="Send">
         </form>
-    </div>
-
-    <br><br>
-
-    <div id="qol_buttons">
-        <button id="clear_players">Clear Players</button>
-        <button id="clear_chat">Clear Chat</button>
     </div>
 
 
